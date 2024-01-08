@@ -16,7 +16,8 @@
     "start-backend": "npm run build-server && node dist/server/index.js",
     "start-db": "docker-compose up -d",
     "start-frontend": "vite",
-    "test": "npm run test:unit"
+    "test": "npm run test:unit",
+    "prisma-update-db": "npx prisma migrate dev && prisma db pull && prisma generate"
   },
   "main": "src/client/main.ts",
   "dependencies": {
