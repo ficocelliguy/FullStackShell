@@ -26,9 +26,14 @@ Now install all of the project's dependencies via NPM:
 npm ci
 ```
 
-To start the database run
+Make sure Docker is running, then start the database with
 ```
 npm run start-db
+```
+
+Populate the database's schema after the first time it is started with
+```
+prisma-update-db
 ```
 
 To start the server run
